@@ -1,43 +1,45 @@
 <script>
-	var turl = window.location.search.substring(1).replace(/&[\s\S]*/g, "")
-	if (turl != "")
-		if (/(https?|ftp|file):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]/g.test(turl))
-			window.location.href = window.location.search.substring(1).replace(/&[\s\S]*/g, "")
+    var turl = window.location.search.substring(1).replace(/&[\s\S]*/g, "")
+    if (turl != "")
+        if (/(https?|ftp|file):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]/g.test(turl))
+            window.location.href = window.location.search.substring(1).replace(/&[\s\S]*/g, "")
 </script>
 <!DOCTYPE HTML>
 <html>
 
 <head>
-	<title>B站链接变蓝工具</title>
-	<meta charset="utf-8" />
-	<link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/gaowanliang/p/img/bilibilis.png">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/b23-tv/b23-tv.github.io/assets/css/main.min.css" />
-	<noscript>
+    <title>B站链接变蓝工具</title>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/gaowanliang/p/img/bilibilis.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/b23-tv/b23-tv.github.io/assets/css/main.min.css" />
+    <noscript>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/b23-tv/b23-tv.github.io/assets/css/noscript.min.css" />
 	</noscript>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158371937-3"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158371937-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-		gtag('config', 'UA-158371937-3');
-	</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158371937-3');
+    </script>
 
 </head>
 
 <body class="is-preload">
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-		<!-- Header -->
-		<header id="header">
-			<div class="logo">
-				<svg style="margin-top: 0.5em;" t="1585395397765" class="icon" viewBox="0 0 1069 1024" version="1.1"
-					xmlns="http://www.w3.org/2000/svg" p-id="2250" width="80%">
+        <!-- Header -->
+        <header id="header">
+            <div class="logo">
+                <svg style="margin-top: 0.5em;" t="1585395397765" class="icon" viewBox="0 0 1069 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2250" width="80%">
 					<path
 						d="M868.93 171.112H697.817l77.535-77.535c13.369-13.368 13.369-32.084 0-45.452s-32.083-13.368-45.451 0L598.893 179.133H470.559L339.55 48.125c-10.695-13.368-26.736-16.041-42.778-8.02-2.674 0-2.674 2.673-5.347 5.347-13.369 13.368-13.369 32.083 0 45.451l80.208 80.21H200.522c-93.577 0-171.112 77.535-171.112 171.112v425.107c0 90.903 77.535 168.438 171.112 168.438h26.736c0 32.084 26.737 56.146 56.147 56.146s56.146-26.736 56.146-56.146h395.697c2.674 32.084 29.41 56.146 61.494 53.473 29.41-2.674 50.798-24.063 53.472-53.473h21.39c93.576 0 171.111-77.535 171.111-171.112V339.551c-2.673-93.577-80.208-168.439-173.785-168.439zM863.582 831.5H211.217c-34.757 0-61.494-29.41-64.167-64.167l-2.674-433.128c0-34.758 29.41-64.167 64.167-64.167H860.91c34.757 0 61.493 29.41 64.167 64.167l2.673 433.128c-2.673 37.43-29.41 64.167-64.167 64.167z"
 						fill="#fff" p-id="2251"></path>
@@ -45,60 +47,61 @@
 						d="M422.433 417.086l16.042 80.209-213.89 40.104-16.042-80.208 213.89-40.105z m205.87 80.209l16.042-80.209 213.89 40.105-16.042 80.208-213.89-40.104z m42.778 168.439c0 2.673 0 8.02-2.674 10.694-13.368 29.41-42.778 48.126-77.535 50.8-21.389 0-42.778-10.695-56.146-26.737-16.042 16.042-34.757 26.736-56.146 26.736-32.084-2.673-61.494-21.389-77.536-50.799 0-2.673-2.673-5.347-2.673-10.694 0-10.695 8.02-18.716 18.715-21.39h2.674c8.02 0 13.368 2.674 16.042 10.695 0 0 21.389 29.41 40.104 29.41 37.43 0 37.43-32.083 58.82-56.146 24.063 26.736 24.063 56.146 58.82 56.146 24.062 0 40.104-29.41 40.104-29.41 2.674-5.347 10.695-10.694 16.042-10.694 10.694-2.674 18.715 5.347 21.389 16.041v5.348z"
 						fill="#fff" p-id="2252"></path>
 				</svg>
-			</div>
-			<div class="content">
-				<div class="inner">
-					<h1>B站链接变蓝(跳转)工具</h1>
-					<p>只需要在需要变蓝的链接前加上 b23-tv.wtf/?(或者 b23-tv.github.io/?)
-						<strong>【注意<code>?</code>是英文问号，不是中文问号？】</strong> 即可变蓝，也就是点击可以跳转</p>
-				</div>
-			</div>
-			<nav>
-				<ul>
-					<li><a href="#intro">一键使用</a></li>
-					<li><a href="#about">关于</a></li>
-					<!--<li><a href="#elements">Elements</a></li>-->
-				</ul>
-			</nav>
-		</header>
+            </div>
+            <div class="content">
+                <div class="inner">
+                    <h1>B站链接变蓝(跳转)工具</h1>
+                    <p>只需要在需要变蓝的链接前加上 b23-tv.wtf/?(或者 b23-tv.github.io/?)
+                        <strong>【注意<code>?</code>是英文问号，不是中文问号？】</strong> 即可变蓝，也就是点击可以跳转</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#intro">一键使用</a></li>
+                    <li><a href="#about">关于</a></li>
+                    <!--<li><a href="#elements">Elements</a></li>-->
+                </ul>
+            </nav>
+        </header>
 
-		<!-- Main -->
-		<div id="main">
-			<!-- Intro -->
-			<article id="intro">
-				<h1 class="major">一键使用</h1>
-				<div class="field half">
-					<label for="name">请输入要变蓝的网址 </label>
-					<input type="text" id="url" />
-				</div>
-				<hr />
-				<h2>结果</h2>
-				<code id="res"></code>
-			</article>
+        <!-- Main -->
+        <div id="main">
+            <!-- Intro -->
+            <article id="intro">
+                <h1 class="major">一键使用</h1>
+                <div class="field half">
+                    <label for="name">请输入要变蓝的网址 </label>
+                    <input type="text" id="url" />
+                </div>
+                <hr />
+                <h2>结果</h2>
+                <code id="res"></code>
+            </article>
 
-			<!-- About -->
-			<article id="about">
-				<h2 class="major">关于</h2>
-				<p>这是利用B站网站正则匹配的漏洞而搞出的网站，原理是因为B站识别到b23-tv就认为是站内链接，就能够变蓝了。不过这个bug很容易就修复了，这个网站不知道啥时候就不行了，大家低调使用，闷声发大财。</p>
-				<p>背景图Pixiv ID:79766588</p>
-			</article>
-		</div>
-		<footer id="footer">
-			<p class="copyright">&copy; <a href="https://gwliang.com">高玩梁</a> | 2020</p>
-		</footer>
-	</div>
-	<div id="bg"></div>
+            <!-- About -->
+            <article id="about">
+                <h2 class="major">关于</h2>
+                <p>这是利用B站网站正则匹配的漏洞而搞出的网站，原理是因为B站识别到b23-tv就认为是站内链接，就能够变蓝了。不过这个bug很容易就修复了，这个网站不知道啥时候就不行了，大家低调使用，闷声发大财。</p>
+                <p>背景图Pixiv ID:79766588</p>
+            </article>
+        </div>
+        <footer id="footer">
+            <p class="copyright">&copy; <a href="https://gwliang.com">高玩梁</a> | 2020</p>
+        </footer>
+    </div>
+    <div id="bg"></div>
 
-	<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/b23-tv/b23-tv.github.io/assets/js/browser.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/b23-tv/b23-tv.github.io/assets/js/breakpoints.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/b23-tv/b23-tv.github.io/assets/js/util.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/b23-tv/b23-tv.github.io/assets/js/main.min.js"></script>
-	<script>
-		$("#url").bind("input propertychange", function (event) {
-			$("#res").text(window.location.protocol + "//" + window.location.host + "/?" + $("#url").val())
-		});
-	</script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/b23-tv/b23-tv.github.io/assets/js/browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/b23-tv/b23-tv.github.io/assets/js/breakpoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/b23-tv/b23-tv.github.io/assets/js/util.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/b23-tv/b23-tv.github.io/assets/js/main.min.js"></script>
+    <script>
+        $("#url").bind("input propertychange", function(event) {
+            if (/(https?|ftp|file):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]/g.test($("#url").val())) $("#res").text(window.location.protocol + "//" + window.location.host + "/?" + $("#url").val())
+            else $("#res").text(window.location.protocol + "//" + window.location.host + "/?http://" + $("#url").val())
+        });
+    </script>
 
 </body>
 
