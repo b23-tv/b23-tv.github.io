@@ -3,8 +3,10 @@
 
 <head>
 	<script>
-		if (window.location.search.substring(1).replace(/&[\s\S]*/g, "") != "")
-			window.location.href = window.location.search.substring(1).replace(/&[\s\S]*/g, "")
+		var turl = window.location.search.substring(1).replace(/&[\s\S]*/g, "")
+		if (turl != "")
+			if (/(https?|ftp|file):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]/g.test(turl))
+				window.location.href = window.location.search.substring(1).replace(/&[\s\S]*/g, "")
 	</script>
 	<title>B站链接变蓝工具</title>
 	<meta charset="utf-8" />
