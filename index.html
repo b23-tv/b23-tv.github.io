@@ -1,23 +1,31 @@
+<script>
+	var turl = window.location.search.substring(1).replace(/&[\s\S]*/g, "")
+	if (turl != "")
+		if (/(https?|ftp|file):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]/g.test(turl))
+			window.location.href = window.location.search.substring(1).replace(/&[\s\S]*/g, "")
+</script>
 <!DOCTYPE HTML>
 <html>
 
 <head>
-	<script>
-		var turl = window.location.search.substring(1).replace(/&[\s\S]*/g, "")
-		if (turl != "")
-			if (/(https?|ftp|file):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]/g.test(turl))
-				window.location.href = window.location.search.substring(1).replace(/&[\s\S]*/g, "")
-	</script>
 	<title>B站链接变蓝工具</title>
 	<meta charset="utf-8" />
 	<link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/gaowanliang/p/img/bilibilis.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/b23-tv/b23-tv.github.io/assets/css/main.min.css" />
-
-
 	<noscript>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/b23-tv/b23-tv.github.io/assets/css/noscript.min.css" />
 	</noscript>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158371937-3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-158371937-3');
+	</script>
+
 </head>
 
 <body class="is-preload">
@@ -64,7 +72,7 @@
 					<input type="text" id="url" />
 				</div>
 				<hr />
-				<h2>结果<small><sub>(点击可复制)</sub></small></h2>
+				<h2>结果</h2>
 				<code id="res"></code>
 			</article>
 
@@ -75,16 +83,12 @@
 				<p>背景图Pixiv ID:79766588</p>
 			</article>
 		</div>
-		<!-- Footer -->
 		<footer id="footer">
-			<p class="copyright">&copy; <a href="https://gwliang.com">高玩梁</a>. 2020</p>
+			<p class="copyright">&copy; <a href="https://gwliang.com">高玩梁</a> | 2020</p>
 		</footer>
-
 	</div>
-
 	<div id="bg"></div>
 
-	<!-- Scripts -->
 	<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/b23-tv/b23-tv.github.io/assets/js/browser.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/b23-tv/b23-tv.github.io/assets/js/breakpoints.min.js"></script>
