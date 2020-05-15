@@ -1,8 +1,10 @@
 <script>
     var turl = window.location.search.substring(1).replace(/&[\s\S]*/g, "")
-    if (turl != "")
+    if (turl != "") {
+        if (turl.indexOf("http://") == -1 && turl.indexOf("https://") == -1) turl = "https://" + turl
         if (/(https?|ftp|file):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]/g.test(turl))
-            window.location.href = window.location.search.substring(1).replace(/&[\s\S]*/g, "")
+            window.location.href = turl
+    }
 </script>
 <!DOCTYPE HTML>
 <html>
@@ -51,7 +53,7 @@
             <div class="content">
                 <div class="inner">
                     <h1>B站链接变蓝(跳转)工具</h1>
-                    <p>只需要在需要变蓝的链接前加上 b23-tv.wtf/?(或者 b23-tv.github.io/?)
+                    <p>首先去掉链接最前面的 https:// 或者是 http:// (如果没有可以忽略)，然后在需要变蓝的链接前加上 b23-tv.wtf/?(或者 b23-tv.github.io/?)
                         <strong>【注意<code>?</code>是英文问号，不是中文问号？】</strong> 即可变蓝，也就是点击可以跳转</p>
                 </div>
             </div>
