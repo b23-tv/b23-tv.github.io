@@ -1,5 +1,6 @@
 <script>
     var turl = window.location.search.substring(1).replace(/&[\s\S]*/g, "")
+    turl= turl.replace(/=/g,"")
     if (turl != "") {
         if (turl.indexOf("http://") == -1 && turl.indexOf("https://") == -1) turl = "https://" + turl
         if (/(https?|ftp|file):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]/g.test(turl))
